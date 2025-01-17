@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   icons: {
-    icon: "/favicon", // /public path
+    icon: "/favicon", // /public   path
   },
 };
 
