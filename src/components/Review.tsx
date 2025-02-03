@@ -24,7 +24,7 @@ import { useRouter } from "next/navigation";
 import { useToast } from "@/hooks/use-toast";
 type Props = {
   review: TReview;
-  userId?: string;
+  userId?: string | null;
 };
 
 const Review = ({ review, userId }: Props) => {

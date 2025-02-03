@@ -18,8 +18,12 @@ const ReviewsList = async ({ reviews }: Props) => {
       )}
       <div className="grid grid-cols-2 gap-4">
         {reviews.map((review) => (
-          // @ts-expect-error
-          <Review key={review.id} review={review} userId={user.id} />
+          // @ts-ignore
+          <Review
+            key={review.id}
+            review={review}
+            userId={user?.id || undefined}
+          />
         ))}
       </div>
     </div>
